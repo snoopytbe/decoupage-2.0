@@ -1,2 +1,2 @@
-# decoupage-2.0
+# decoupage2
 Created with CodeSandbox
