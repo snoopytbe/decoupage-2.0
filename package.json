@@ -17,7 +17,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "latest",
-    "react-number-format": "4.4.4",
+    "react-number-format": "latest",
     "react-redux": "latest",
     "redux": "latest",
     "typescript": "latest"

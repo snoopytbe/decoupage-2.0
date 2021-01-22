@@ -4,7 +4,7 @@ import format from "date-fns/format";
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
-import { MuiPickersUtilsProvider, DatePicker } from "@material-ui/pickers";
+import { MuiPickersUtilsProvider, KeyboardDatePicker } from "@material-ui/pickers";
 import { updateDate } from "../redux/actions";
 import { selectDate } from "../redux/selectors";
 import { useSelector, useDispatch } from "react-redux";
@@ -18,10 +18,11 @@ export default function DateDepense() {
       return format(date, "d MMM yyyy", { locale: this.locale });
     }
   }
+  
   return (
     <MuiPickersUtilsProvider utils={LocalizedUtils} locale={frLocale}>
       <Grid container justify="space-around">
-        <DatePicker
+        <KeyboardDatePicker
           margin="normal"
           id="date-picker-dialog"
           label="Date de l'opération"
